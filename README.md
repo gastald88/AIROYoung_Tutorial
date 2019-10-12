@@ -48,9 +48,9 @@ Once the package is built and in the ***folder*** directory, one should start th
 ## Setup
 
 The tutorial needs to install some Python required packages, so you may prefer to use a Python virtual environment by *virtualenv*. That said, you just need to install what follows:
-* Boost C++ Libraries ($\geq$ 1.66);
-* CMake ($\geq$ 3.14);
-* Python ($=$ 2.7.15).
+* Boost C++ Libraries (>= 1.66);
+* CMake (>= 3.14);
+* Python (== 2.7.15).
 
 Depending on some characteristics of the Boost libraries you may need to change some directives in the CMakeLists.txt, but they are very easy to understand:
 
