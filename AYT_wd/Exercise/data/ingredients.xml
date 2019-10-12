@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<recipes xmlns:ayt="AIROYoungTutorial">
+  <!--LIST OF RECIPES AND RELATIVE INGREDIENTS-->
+
+  <recipe name="recipe_1">
+    <ingredient name="cooking_type">oven</ingredient>
+    <ingredient name="conservation">fridge</ingredient>
+    <ingredient name="cooking_duration">40</ingredient>
+    <ingredient name="butter">30</ingredient>
+    <ingredient name="milk">500</ingredient>
+    <ingredient name="flour">100</ingredient>
+    <ingredient name="chocolate">120</ingredient>
+    <ingredient name="eggs">2</ingredient>
+  </recipe>
+
+  <recipe name="recipe_2">
+    <ingredient name="cooking_type">pan</ingredient>
+    <ingredient name="conservation">anywhere</ingredient>
+    <ingredient name="cooking_duration">25</ingredient>
+    <ingredient name="butter">40</ingredient>
+    <ingredient name="milk">0</ingredient>
+    <ingredient name="flour">200</ingredient>
+    <ingredient name="chocolate">0</ingredient>
+    <ingredient name="eggs">4</ingredient>
+  </recipe>
+  
+  <recipe name="recipe_3">
+    <ingredient name="cooking_type">pot</ingredient>
+    <ingredient name="conservation">refrigerator</ingredient>
+    <ingredient name="cooking_duration">25</ingredient>
+    <ingredient name="butter">0</ingredient>
+    <ingredient name="milk">750</ingredient>
+    <ingredient name="flour">0</ingredient>
+    <ingredient name="chocolate">0</ingredient>
+    <ingredient name="eggs">1</ingredient>
+  </recipe>
+
+  <recipe name="recipe_4">
+    <ingredient name="cooking_type">oven</ingredient>
+    <ingredient name="conservation">anywhere</ingredient>
+    <ingredient name="cooking_duration">15</ingredient>
+    <ingredient name="butter">20</ingredient>
+    <ingredient name="milk">125</ingredient>
+    <ingredient name="flour">100</ingredient>
+    <ingredient name="chocolate">50</ingredient>
+    <ingredient name="eggs">3</ingredient>
+  </recipe>
+
+  <recipe name="recipe_5">
+    <ingredient name="cooking_type">pan</ingredient>
+    <ingredient name="conservation">fridge</ingredient>
+    <ingredient name="cooking_duration">70</ingredient>
+    <ingredient name="butter">300</ingredient>
+    <ingredient name="milk">100</ingredient>
+    <ingredient name="flour">0</ingredient>
+    <ingredient name="chocolate">0</ingredient>
+    <ingredient name="eggs">3</ingredient>
+  </recipe>
+
+  <recipe name="recipe_6">
+    <ingredient name="cooking_type">pot</ingredient>
+    <ingredient name="conservation">anywhere</ingredient>
+    <ingredient name="cooking_duration">25</ingredient>
+    <ingredient name="butter">0</ingredient>
+    <ingredient name="milk">250</ingredient>
+    <ingredient name="flour">150</ingredient>
+    <ingredient name="chocolate">150</ingredient>
+    <ingredient name="eggs">0</ingredient>
+  </recipe>
+
+</recipes>

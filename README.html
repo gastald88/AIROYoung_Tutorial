@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>README</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="airoyoung_tutorial">AIROYoung_Tutorial</h1>
+<p>In this repository there are easy examples or exercise concerning the main functionalities of <a href="https://www.boost.org/doc/libs/1_71_0/libs/python/doc/html/index.html">Boost Python</a>.</p>
+<p><em>Boost Python</em> is a library in the <a href="https://www.boost.org/">Boost</a> suite which allows a very simple way to interface your C++ code to Python.</p>
+<h2 id="structure">Structure</h2>
+<p>The tutorial is structured as follows:</p>
+<pre><code>AYT_wd
+├───Exercise
+│   ├───build
+│   │   └───source
+│   └───python_scripts
+│   ├───data
+├───Exercise_Solved
+│   ├───build
+│   │   └───source
+│   └───python_scripts
+│   ├───data
+├───Tutorial
+│   ├───build
+│   │   └───source
+│   └───python_scripts
+└───utils
+</code></pre>
+<ol>
+<li>
+<p>In the <strong>Tutorial</strong> folder there is the (Python and C++) source code for a Python package to model an example concerning all the main Boost Python instruction for base and medium user;</p>
+</li>
+<li>
+<p>In the <strong>Exercise</strong> folder there is the the (Python and C++) source code for a Python package to model an exercise with empty implementation (TODO) of methods for the exposition to Python;</p>
+</li>
+<li>
+<p>In the <strong>Exercise_Solved</strong> folder there is the same C++ source code of <strong>Exercise</strong> with the implementation.</p>
+</li>
+<li>
+<p>In the <strong>utils</strong> folder there are some miscellaneous Python functions used by the notebooks</p>
+</li>
+</ol>
+<p>Given any of the previous folder, the inner structure is the same for the three of them:</p>
+<pre><code>folder
+├───build
+|   │ CMakeLists.txt
+|   | build_all.bat
+|   | build_all.sh
+│ 	└─── source
+└───python_scripts
+└───data
+</code></pre>
+<p>In the <em><strong>build</strong></em> folder there is a <em><strong>source</strong></em> subdirectory containing the C++ files to compile in a Python module through Boost Python. The file <em>build_all.bat/sh</em> (depending on the platform) calls the build system configuration file <em>CMakeLists.txt</em> and creates the Python package, then it copies it in the parent directory. These files must be customized by the client, in particular one must decide the configuration/build type (Debug or Release) and must set up the Boost root directory. The folder <em><strong>python_scripts</strong></em> and <em><strong>data</strong></em> contain respectively additional files written in Python and data loaded for example purpose in the notebooks in the root folder.<br>
+Once the package is built and in the <em><strong>folder</strong></em> directory, one should start the <em>JuPyter</em> server. It is very important that <em>the JuPyter server is launched in the AYT_wd folder</em>.</p>
+<h2 id="setup">Setup</h2>
+<p>The tutorial needs to install some Python required packages, so you may prefer to use a Python virtual environment by <em>virtualenv</em>. That said, you just need to install what follows:</p>
+<ul>
+<li>Boost C++ Libraries (<span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>≥</mo></mrow><annotation encoding="application/x-tex">\geq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.77194em; vertical-align: -0.13597em;"></span><span class="mrel">≥</span></span></span></span></span> 1.66);</li>
+<li>CMake (<span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>≥</mo></mrow><annotation encoding="application/x-tex">\geq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.77194em; vertical-align: -0.13597em;"></span><span class="mrel">≥</span></span></span></span></span> 3.14);</li>
+<li>Python (<span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>=</mo></mrow><annotation encoding="application/x-tex">=</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.36687em; vertical-align: 0em;"></span><span class="mrel">=</span></span></span></span></span> 2.7.15).</li>
+</ul>
+<p>Depending on some characteristics of the Boost libraries you may need to change some directives in the CMakeLists.txt, but they are very easy to understand:</p>
+<pre><code>#tags of boost libraries
+SET(Boost_USE_STATIC_LIBS ON) #set to ON if you compiled boost as static libraries
+SET(Boost_NO_SYSTEM_PATHS ON) #do not modify this
+SET(Boost_USE_MULTITHREADED ON) #set to ON if you compiled boost with the multithreaded option
+SET(Boost_ARCHITECTURE -x64) #set to ON if you compiled boost for x64 platform
+</code></pre>
+<p>If you have any troubles finding the Boost libraries, add to the CMakeLists.txt file the command <code>set(Boost_DEBUG ON)</code> for a more verbose output.</p>
+<p>CMake will automatically find a C++ compiler, but in case of any troubles refer to the <a href="%5Bhttps://cmake.org%5D(https://cmake.org/)">CMake</a> documentation.</p>
+<p>At this point, you just need the following steps to run the code:</p>
+<ol>
+<li>[<em>optional]</em> make use of a python virtual environment;</li>
+<li>execute <code>pip install -r requirements.txt</code>;</li>
+<li>choose one package to build and execute the <code>build_all.bat/sh</code> file;</li>
+<li>launch a JuPyter server from the AYT_wd folder ([<em>optional</em>] in the same virtual environment as in 1);</li>
+<li>open the notebook and execute each cell one by one to analyze the output.</li>
+</ol>
+</div>
+</body>
+
+</html>
