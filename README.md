@@ -35,10 +35,10 @@ Given any of the previous folder, the inner structure is the same for the three 
 ```
     folder
     ├───build
-	│   │ CMakeLists.txt
-	│   │ build_all.bat
-	│   │ build_all.sh
-    │ 	└─── source
+    │   │ CMakeLists.txt
+    │   │ build_all.bat
+    │   │ build_all.sh
+    │   └─── source
     └───python_scripts
     └───data
 ```
