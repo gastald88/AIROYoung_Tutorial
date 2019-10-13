@@ -1,20 +1,5 @@
 #pragma once
 
-//some conditional compilation definitions for boost::python
-
-#ifdef _WIN32
-#define DLL_EXPORT
-#ifdef DLL_EXPORT
-#define EXPOSE __declspec(dllexport)
-#else
-#define EXPOSE __declspec(dllimport)
-#endif
-#define BOOST_PYTHON_STATIC_LIB
-#else
-#define BOOST_LOG_DYN_LINK 1 // Boost python explodes otherwise
-#define EXPOSE 
-#endif
-
 #include <string>
 #include <vector>
 #include <iostream>
