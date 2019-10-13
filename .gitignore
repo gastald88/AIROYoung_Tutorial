@@ -1,3 +1,9 @@
 *.pyc
 *.pyd
 .vscode/
+
+build/
+!CMakeLists.txt
+!source/
+!build_all.bat
+!build_all.sh
