@@ -1,3 +1,13 @@
+/**
+ * @file py_exp.cpp
+ * @author Gasta
+ * @brief this file contains the Python exposition environment. It calls all the xxx::python() methods (just a design choice of mine, not a requirement)
+ * @version 0.1
+ * @date 2019-10-13
+ * 
+ * @copyright Copyright (c) 2019
+ * 
+ */
 #include "globals.h"
 #include "employee.h"
 #include "TSP.h"

@@ -1,3 +1,13 @@
+/**
+ * @file globals.h
+ * @author Gasta
+ * @brief inclusion of some boost and std classes
+ * @version 0.1
+ * @date 2019-10-12
+ * 
+ * @copyright Copyright (c) 2019
+ * 
+ */
 #pragma once
 
 #include <string>

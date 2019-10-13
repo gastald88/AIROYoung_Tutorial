@@ -61,7 +61,7 @@ public:
 	 */
 	virtual string makeNoise() const;
 	/**
-	 * @brief Construct a new Animal object. Thi default constructor is needed by the 
+	 * @brief Construct a new Animal object. This method is needed by the 
 	 * Python exposition of container of Animal (e.g: vector<Animal>)
 	 * 
 	 */
@@ -72,7 +72,7 @@ public:
 	 */
 	virtual ~Animal() = default;
 	/**
-	 * @brief compares two animals. Thi default constructor is needed by the 
+	 * @brief compares two animals. This method is needed by the 
 	 * Python exposition of container of Animal (e.g: vector<Animal>)
 	 * 
 	 * @param a another animal
